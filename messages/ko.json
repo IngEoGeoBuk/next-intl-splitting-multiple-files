@@ -1,0 +1,24 @@
+{
+  "home": {
+    "metadata": {
+      "title": "이세계온라인",
+      "description": "이세계온라인 홈"
+    },
+    "title": "안녕",
+    "description": "{name} 아"
+  },
+  "about": {
+    "metadata": {
+      "title": "이세계온라인 | 어바웃",
+      "description": "이세카이온라인 어바웃"
+    },
+    "title": "어바웃 안녕",
+    "description": "{name} 아"
+  },
+  "room": {
+    "metadata": {
+      "title": "이세계온라인 | {title}",
+      "description": "이세카이온라인 {title}"
+    }
+  }
+}
