@@ -14,7 +14,7 @@
         └── room.json
 ```
 
-## 2. Edit i18n.ts like me
+## 2. Edit i18n.ts like this
 
 ```
 export default getRequestConfig(async ({ locale }) => {
