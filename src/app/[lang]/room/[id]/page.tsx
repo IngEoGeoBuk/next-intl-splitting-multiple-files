@@ -10,10 +10,7 @@ export async function generateMetadata({
 }: {
   params: { locale: string; id: number };
 }): Promise<Metadata> {
-  const t = await getTranslations({
-    locale: params.locale,
-    namespace: "room",
-  });
+  const t = await getTranslations("room");
 
   const url = `https://jsonplaceholder.typicode.com/todos/${params.id}`;
   const { data } = await axios.get(url);

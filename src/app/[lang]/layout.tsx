@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 
 import "./globals.css";
 
@@ -13,17 +12,10 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Using internationalization in Client Components
-  const messages = useMessages();
-
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <NextIntlClientProvider
-          locale={locale}
-          timeZone="Europe/Vienna"
-          messages={messages}
-        >
+        <NextIntlClientProvider locale={locale}>
           {children}
         </NextIntlClientProvider>
       </body>
